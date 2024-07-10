@@ -1,0 +1,105 @@
+.tabs {
+    padding-top: 30px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        &-list {
+            display: flex;
+            justify-content: center;
+        }
+        &-item {
+            display: grid;
+            gap: 10px;
+            background: $cSecond;
+            padding: 10px;
+            border-radius: 16px;
+        }
+        &-link {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.1s linear;
+            background: transparent;
+            padding: 5px 15px;
+            border-radius: 8px;
+        }
+
+        //! Window
+        &-window {
+            width: 1000px;
+            height: 70vh;
+            background: $cSecond;
+            border-radius: 16px;
+            padding: 10px 20px;
+            &-panel {
+                &-fx {
+                    display: grid;
+                    h1 {
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 30px;
+                    }
+                    .cart {
+                        padding-top: 20px;
+                        place-self: center;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        padding-bottom: 10px;
+                        span {
+                            list-style: disc;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+
+                        ul {
+                            width: 800px;
+                            display: flex;
+                            gap: 10px;
+                            li {
+                                font-size: 16px;
+                                padding: 1px 7px;
+                                border: 1px solid $cFirst;
+                                border-radius: 3px;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                font-weight: 500;
+
+                                img {
+                                    width: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .info {
+                        border-top: 1px solid #00000049;
+                        padding-top: 10px;
+                        p {
+                            span {
+                                font-weight: 700;
+                            }
+
+                            .img-nuxt {
+                                margin: 0;
+                            }
+                            img {
+                                width: 18px;
+                                display: inline;
+                                margin-bottom: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.active {
+    background: $cBody;
+}

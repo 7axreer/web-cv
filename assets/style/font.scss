@@ -1,9 +1,44 @@
-$OpenSans: ("Light", 300), ("Regular", 400), ("Medium", 500), ("SemiBold", 600), ("Bold", 700), ("ExtraBold", 800);
+$OpenSans: 
+    ("Light", 300), 
+    ("Regular", 400), 
+    ("Medium", 500), 
+    ("SemiBold", 600), 
+    ("Bold", 700), 
+    ("ExtraBold", 800);
 
 @each $name, $weight in $OpenSans {
     @font-face {
         font-family: "OpenSans";
-        src: url(../font/OpenSans-#{$name}.ttf);
+        src: url(../font/OpenSans/OpenSans-#{$name}.ttf);
         font-weight: $weight;
     }
 }
+
+$Syne: 
+    ("Regular", 400), 
+    ("Medium", 500), 
+    ("SemiBold", 600), 
+    ("Bold", 700), 
+    ("ExtraBold", 800);
+
+@each $name, $weight in $Syne {
+    @font-face {
+        font-family: "Syne";
+        src: url(../font/Syne/Syne-#{$name}.ttf);
+    }
+}    
+
+$Poppins: 
+    ("Regular", 400), 
+    ("Medium", 500), 
+    ("SemiBold", 600), 
+    ("Bold", 700), 
+    ("ExtraBold", 800),
+    ("ExtraBold", 800);
+
+@each $name, $weight in $Poppins {
+    @font-face {
+        font-family: "Poppins";
+        src: url(../font/Poppins/Poppins-#{$name}.ttf);
+    }
+}    

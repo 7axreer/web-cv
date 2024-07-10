@@ -1,4 +1,4 @@
-<script setup></script>
+<script setup lang="ts"></script>
 
 <template>
     <main>
@@ -6,21 +6,28 @@
             <div class="container">
                 <div class="nav__content">
                     <ul class="nav__content-list">
-                        <NuxtLink class="nav__content-list-link">
+                        <li class="nav__content-list-link">
+                            <a href="">
+                                <img src="~/assets/img/logo.svg" alt="" />
+                            </a>
+                        </li>
+
+                        <li class="nav__content-list-link">
                             <a href="#">Home</a>
-                        </NuxtLink>
-                        <NuxtLink class="nav__content-list-link">
+                        </li>
+                        <li class="nav__content-list-link">
                             <a href="#skills">Skills</a>
-                        </NuxtLink>
-                        <NuxtLink class="nav__content-list-link">
+                        </li>
+                        <li class="nav__content-list-link">
                             <a href="">Work experience</a>
-                        </NuxtLink>
-                        <NuxtLink class="nav__content-list-link">
+                        </li>
+                        <li class="nav__content-list-link">
                             <a href="">About</a>
-                        </NuxtLink>
-                        <NuxtLink class="nav__content-list-link">
+                        </li>
+                        <li class="nav__content-list-link">
                             <a href="">Contanct Me</a>
-                        </NuxtLink>
+                        </li>
+                        <li class="nav__content-list-link"></li>
                     </ul>
                 </div>
             </div>
